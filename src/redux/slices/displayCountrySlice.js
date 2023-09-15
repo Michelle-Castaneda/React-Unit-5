@@ -8,6 +8,7 @@ export const displayCountrySlice =createSlice({
     },
     reducers: {
         setDisplayCountry: (state, action) => {
+            console.log(action.payload)
             state.value=action.payload;
         },
         deleteDisplayCountry: (state) => {
